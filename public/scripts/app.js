@@ -12,7 +12,7 @@ var $grid = $('.grid').isotope({
     category: '[data-category]',
     commits: function( itemElem ) {
       var weight = $( itemElem ).find('.commits').text();
-      return parseFloat( weight.replace( /[\(\)]/g, '') );
+      return parseFloat( weight.replace( /[\(\)]/g, '') * -1 );
     }
   }
 });

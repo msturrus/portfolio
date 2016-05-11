@@ -88,6 +88,7 @@ body {
   height: 250px;
   margin: 20px;
   padding: 10px;
+  padding-top: 30px;
   background: #888;
   color: #262524;
   border-radius: 50px;
@@ -99,6 +100,8 @@ body {
 img {
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
+  display: block;
 }
 
 /*.element-item > * {
@@ -139,8 +142,8 @@ img {
   font-size: 12px;
 }*/
 
-.element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
-.element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
+.element-item.ruby            { background: #F00; background: hsl(   0, 50%, 35%); }
+.element-item.Node            { background: #43853D; background: hsl(115, 37%, 38%, 1); }
 .element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
 .element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
 .element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
