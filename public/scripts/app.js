@@ -10,8 +10,8 @@ var $grid = $('.grid').isotope({
     symbol: '.symbol',
     number: '.number parseInt',
     category: '[data-category]',
-    weight: function( itemElem ) {
-      var weight = $( itemElem ).find('.weight').text();
+    commits: function( itemElem ) {
+      var weight = $( itemElem ).find('.commits').text();
       return parseFloat( weight.replace( /[\(\)]/g, '') );
     }
   }
