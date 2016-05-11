@@ -2,6 +2,8 @@
 
 body {
   font-family: sans-serif;
+  background-color: rgba(25, 25, 25, 1);
+  color: rgba(225, 225, 225, 1);
 }
 
 /* ---- button ---- */
@@ -65,7 +67,9 @@ body {
 /* ---- isotope ---- */
 
 .grid {
-  border: 1px solid #333;
+  /*border: 1px solid #333;*/
+  margin: auto;
+  width: 900px;
 }
 
 /* clear fix */
@@ -80,18 +84,27 @@ body {
 .element-item {
   position: relative;
   float: left;
-  width: 400px;
-  height: 400px;
-  margin: 5px;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
   padding: 10px;
   background: #888;
   color: #262524;
+  border-radius: 50px;
+  -moz-box-shadow:inset 9px 14px 15px #cccccc;
+  -webkit-box-shadow:inset 9px 14px 15px #cccccc;
+  box-shadow:inset 9px 14px 15px #cccccc;
 }
 
-.element-item > * {
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.element-item > * {
   margin: 0;
   padding: 0;
-}
+}*/
 
 .element-item .name {
   position: absolute;
@@ -104,7 +117,7 @@ body {
   font-weight: normal;
 }
 
-.element-item .symbol {
+/*.element-item .symbol {
   position: absolute;
   left: 10px;
   top: 0px;
@@ -124,7 +137,7 @@ body {
   left: 10px;
   top: 76px;
   font-size: 12px;
-}
+}*/
 
 .element-item.alkali          { background: #F00; background: hsl(   0, 100%, 50%); }
 .element-item.alkaline-earth  { background: #F80; background: hsl(  36, 100%, 50%); }
