@@ -87,15 +87,76 @@ body {
   width: 250px;
   height: 250px;
   margin: 20px;
-  padding: 10px;
+  padding: 16px;
   padding-top: 30px;
+  background-image: url("public/img/dark_fish_skin.png")
   background: #888;
   color: #262524;
   border-radius: 50px;
   -moz-box-shadow:inset 9px 14px 15px #cccccc;
   -webkit-box-shadow:inset 9px 14px 15px #cccccc;
   box-shadow:inset 9px 14px 15px #cccccc;
+  /*z-index: -60;*/
+  }
+
+.face {
+  background: #43853D; background: hsl(115, 57%, 28%);
+  transition: all .5s ease-in-out;
+  height: 200px;
+  border-radius: 20px;
+  border: 1px solid grey;
+  padding: 5px;
+  position: relative;
+  z-index: 20;
+  /*-moz-box-shadow:inset 9px 14px 15px #cccccc;
+  -webkit-box-shadow:inset 9px 14px 15px #cccccc;
+  box-shadow:inset 9px 14px 15px #cccccc;*/
+
 }
+
+.overlay {
+  opacity: 1;
+  margin: 20px;
+  transition: all .0s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  z-index: 10;
+
+}
+
+.grid.element-item:hover .grid. {
+  display: none;
+}
+
+.element-item:hover .face {
+  -webkit-transform-origin: 100% 100%;
+
+  transform: rotateY(0deg) scale(1.00) translate(200px);
+	-webkit-transform: rotateY(0deg) scale(1.00) translate(200px);
+	-moz-transform: rotateY(0deg) scale(1.00) translate(200px);
+	-o-transform: rotateY(0deg) scale(1.00) translate(200px);
+	-ms-transform: rotateY(0deg) scale(1.00) translate(200px);
+  background: #43853D; background: hsl(115, 57%, 28%);
+  transition: all .5s ease-in-out;
+  z-index: 100;
+  -moz-box-shadow: 9px 14px 15px #000000;
+  -webkit-box-shadow: 9px 14px 15px #000000;
+  box-shadow: 9px 14px 15px #000000;
+
+  /*-ms-transform: rotateY(95deg) rotateZ(9deg) scale(1.00);*/
+
+
+}
+
+.element-item:hover .overlay {
+  opacity: 1;
+  transition: all .75s ease-in-out;
+}
+
+
+/*.element-item:hover img {
+  display: none;
+}*/
 
 img {
   margin-left: auto;
@@ -110,14 +171,17 @@ img {
 }*/
 
 .element-item .name {
-  position: absolute;
-
-  left: 10px;
-  top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   text-transform: none;
   letter-spacing: 0;
   font-size: 12px;
   font-weight: normal;
+  text-align: center;
+}
+
+.projlink {
+  text-align: center;
 }
 
 /*.element-item .symbol {
@@ -143,8 +207,8 @@ img {
 }*/
 
 .element-item.ruby            { background: #F00; background: hsl(   0, 50%, 35%); }
-.element-item.Node            { background: #43853D; background: hsl(115, 37%, 38%, 1); }
-.element-item.lanthanoid      { background: #FF0; background: hsl(  72, 100%, 50%); }
+.element-item.Node            { background: #43853D; background: hsl(115, 57%, 28%); }
+.element-item.front           { background: #3d6a85; background: hsl(202, 37%, 38%); }
 .element-item.actinoid        { background: #0F0; background: hsl( 108, 100%, 50%); }
 .element-item.transition      { background: #0F8; background: hsl( 144, 100%, 50%); }
 .element-item.post-transition { background: #0FF; background: hsl( 180, 100%, 50%); }
